@@ -1,6 +1,6 @@
 # MinimaiDX
  
-### An 8-button AstroDX-style controller for tablet-sized devices, using keyboard inputs
+### An 8-button AstroDX controller for tablet-sized devices, using keyboard inputs
  
 <img width="1600" height="1280" alt="MinimaiDX build photo 1" src="https://github.com/user-attachments/assets/066b46a7-9b18-43fa-b69f-c212d9bad321" />
 <img width="1600" height="1280" alt="MinimaiDX build photo 2" src="https://github.com/user-attachments/assets/3828a0d2-582c-4cd8-b160-8d43528486ad" />
