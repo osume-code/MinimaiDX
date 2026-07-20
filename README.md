@@ -1,63 +1,57 @@
 # MinimaiDX
-### 8 Button AstroDX controller for tablet-sized devices using keyboard inputs
-
-<img width="1600" height="1280" alt="WhatsApp Image 2026-04-27 at 14 43 16 (1)" src="https://github.com/user-attachments/assets/066b46a7-9b18-43fa-b69f-c212d9bad321" />
-<img width="1600" height="1280" alt="WhatsApp Image 2026-04-27 at 14 43 16 (2)" src="https://github.com/user-attachments/assets/3828a0d2-582c-4cd8-b160-8d43528486ad" />
-<img width="1600" height="1280" alt="WhatsApp Image 2026-04-27 at 14 43 17 (1)" src="https://github.com/user-attachments/assets/dc0c6697-9cc0-4285-a48f-895b6eadeff8" />
-These are older photos not yet using the Pi Pico, the newer version has a smaller and more compact dongle
-
-<img width="1399" height="1119" alt="WhatsApp Image 2026-04-27 at 14 43 16" src="https://github.com/user-attachments/assets/399f73be-62b6-4677-a981-c8b11a619bf3" />
-
-
-Features
-- Adaptable to various sized tabets
-- Minimal hardware needed (no pcbs needed)
-- Very cheap to make
-- No screws required at all
-- Cut filament is used as hinges
-
-Material list
-- 30 AWG wire
-- 8 Low profile Kalih Red switches
-- Raspberry Pi Pico (I recommend getting a knockoff with usb-c preinstalled)
-- 3d printer filament of any color (I used transparent PETG)
-
-Notes
-- Basic soldering skills are needed (this was my first time soldering in a project)
-- a 3d printer is needed (preferibly with a print area of 220mmx220mm or larger)
-- a working tablet that supports usb host mode (if not a OTG adapter will be required)
-- Most likely will need to modify some of my CAD files to make the mounting clips fit your tablet 
-- i'll be honest this project is fundimentally super simple but i spent way too long trying to perfect as many things as i could. However, I am a student can do mediocre CAD at best so if you want to scale up/down the CAD files to fit your tabet size you **will** need to edit the slots for the switches and holes for hinges
-
-- if you dont know how to edit CAD files you can also contact my discord (invisble.) and subject to my avaiblity i might be able to help you
-
-The original design was made to perfectly fit my iPad Air (3rd generation)
-You will most likely have a differently sized device, and thus will need to modify my design files
-
-## About the License
-
-It's CC-NC. So DIY for yourself and for your friend for free, don't make money from it. And plagiarism that doesn’t mention the original author is not acceptable.
-
-If you're interested in buying from me or some kind of commercial use, please contact me (Discord).
-Discord username - invisble.
-
-## Disclaimer
-
-This is a personal project I did on my own time without any endorsement, i will continue to listen to feedback and potentially improve this project. I try my best to ensure everything is working and accurate. However, mistakes may occour I cannot be held responsible for any loss of your time or money that may result from using this project. Thank you for your understanding.
-
-
-# Build guide here
-[(Build guide.md)](https://github.com/osume-code/MinimaiDX/blob/main/Build%20guide.md)
-
-
-
-Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
-
-This work is licensed under a
-[Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
-
+ 
+### An 8-button AstroDX-style controller for tablet-sized devices, using keyboard inputs
+ 
+<img width="1600" height="1280" alt="MinimaiDX build photo 1" src="https://github.com/user-attachments/assets/066b46a7-9b18-43fa-b69f-c212d9bad321" />
+<img width="1600" height="1280" alt="MinimaiDX build photo 2" src="https://github.com/user-attachments/assets/3828a0d2-582c-4cd8-b160-8d43528486ad" />
+<img width="1600" height="1280" alt="MinimaiDX build photo 3" src="https://github.com/user-attachments/assets/dc0c6697-9cc0-4285-a48f-895b6eadeff8" />
+*These are older photos taken before switching to the Pi Pico — the current version uses a smaller, more compact dongle.*
+ 
+<img width="1399" height="1119" alt="MinimaiDX compact Pico version" src="https://github.com/user-attachments/assets/399f73be-62b6-4677-a981-c8b11a619bf3" />
+## Features
+ 
+- Adaptable to various tablet sizes
+- Minimal hardware needed — no PCB required
+- Very cheap to build
+- No screws — cut filament is used as hinges
+## Materials
+ 
+| Item | Notes |
+|---|---|
+| 30 AWG wire | for wiring switches to the Pico |
+| 8× Kailh Red switches | low-profile |
+| Raspberry Pi Pico | a USB-C knockoff is recommended for convenience |
+| 3D printer filament | any color — transparent PETG was used for the original |
+ 
+## Requirements
+ 
+- Basic soldering skills (this was my first-ever soldering project, so don't worry if you're new too)
+- A 3D printer, ideally with a 220×220 mm or larger print area
+- A tablet with USB host mode support (or an OTG adapter if it doesn't)
+- Some CAD editing, most likely — see below
+## Before You Build
+ 
+The original design was built to exactly fit an **iPad Air (3rd generation)**. If you have a different device, you'll almost certainly need to modify the CAD files — specifically the switch slots and hinge holes — to match your tablet's dimensions.
+ 
+I'm a student and my CAD skills are decent at best, so the files aren't perfectly parametric. If you're not confident editing CAD files yourself, feel free to reach out on Discord (**invisble.**) — happy to help when I have time.
+ 
+## Build Guide
+ 
+Full assembly instructions: **[Build guide.md](https://github.com/osume-code/MinimaiDX/blob/main/Build%20guide.md)**
+ 
+## License
+ 
+This project is licensed under **CC BY-NC 4.0**.
+ 
+That means: build one for yourself or a friend for free, no problem. Don't sell it or otherwise make money from it. Plagiarizing this project without crediting the original author is not okay.
+ 
+Interested in buying a unit or discussing commercial use? Reach out on Discord: **invisble.**
+ 
 [![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
-
+ 
 [cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
 [cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
-[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
+ 
+## Disclaimer
+ 
+This is a personal project built in my own time, without any official endorsement. I'll keep listening to feedback and improving it where I can, and I've done my best to make sure everything here is accurate — but mistakes can happen. I can't be held responsible for any loss of time or money resulting from using this project. Thanks for understanding!
