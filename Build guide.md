@@ -38,3 +38,5 @@ Installing buttons, this is honestly one of the easiest things to do.
 - photo below should show the peices of filament as the hinges for the buttons
 <img width="1600" height="1280" alt="WhatsApp Image 2026-07-20 at 14 19 28 (2)" src="https://github.com/user-attachments/assets/9a082d49-632c-4eba-a139-83b034986bb5" />
 
+## Software
+So ill be honest here I cant properly guide 
