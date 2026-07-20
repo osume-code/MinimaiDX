@@ -30,12 +30,12 @@
 - Basic soldering skills (this was my first-ever soldering project, so don't worry if you're new too)
 - A 3D printer, ideally with a 220×220 mm or larger print area
 - A tablet with USB host mode support (or an OTG adapter if it doesn't)
-- Some CAD editing, most likely — see below
+- Some CAD editing, most likely - see below
 ## Before You Build
  
-The original design was built to exactly fit an **iPad Air (3rd generation)**. If you have a different device, you'll almost certainly need to modify the CAD files — specifically the switch slots and hinge holes — to match your tablet's dimensions.
+The original design was built to exactly fit an **iPad Air (3rd generation)**. If you have a different device, you'll almost certainly need to modify the CAD files, specifically the switch slots and hinge holes to match your tablet's dimensions.
  
-I'm a student and my CAD skills are decent at best, so the files aren't perfectly parametric. If you're not confident editing CAD files yourself, feel free to reach out on Discord (**invisble.**) — happy to help when I have time.
+I'm a student and my CAD skills are decent at best, so the files aren't perfectly parametric. If you're not confident editing CAD files yourself, feel free to reach out on Discord (**invisble.**) happy to help when I have time.
  
 ## Build Guide
  
