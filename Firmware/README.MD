@@ -1,7 +1,3 @@
-# minimai
- 
-A custom 8-button maimai-style rhythm game controller built on a Raspberry Pi Pico, running QMK firmware.
- 
 ## Quick Start (Flash the pre-built firmware)
  
 No compiling required — just flash the included `minimai_default.uf2`:
