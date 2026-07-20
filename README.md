@@ -8,12 +8,14 @@
 *These are older photos taken before switching to the Pi Pico — the current version uses a smaller, more compact dongle.*
  
 <img width="1399" height="1119" alt="MinimaiDX compact Pico version" src="https://github.com/user-attachments/assets/399f73be-62b6-4677-a981-c8b11a619bf3" />
+
 ## Features
- 
+
 - Adaptable to various tablet sizes
 - Minimal hardware needed — no PCB required
 - Very cheap to build
 - No screws — cut filament is used as hinges
+
 ## Materials
  
 | Item | Notes |
