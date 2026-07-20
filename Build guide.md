@@ -13,7 +13,7 @@ Mounting clips will also need to be custom made for different sized tablets (CAD
 - No supports are needed for any of the 3d prints
 
 # How to assemble 
-## Wiring 
+## Wiring & Switches
 <img width="435" height="381" alt="image" src="https://github.com/user-attachments/assets/973ea924-cb67-4bc0-89f5-3c81c25ea9fe" />
 Assuming you want the wires to come out from the top (I reccomend either going with top or bottom relative to play orientation) ring buttons 1-4 will be clumped together and 5-8 will also be clumped together on the other side. Photo for visualisation <img width="1600" height="1280" alt="image" src="https://github.com/user-attachments/assets/18eb0470-a61b-41ac-9941-9c277f67c23d" />
 
@@ -28,3 +28,9 @@ Now we add the switches to the shell
 - now thread the wires through the little holes until you reach your exit point
 - repeat increasing wire length until all 4 buttons on that side are done
 Repeat again for all the buttons on the other side
+
+## Buttons
+Installing buttons, this is honestly one of the easiest things to do.
+- first check if the hole in the button is large enough for standard 1.75mm filament to fit through smoothly, if not either adjust CAD model or just shove it through. It'll probally work fine anyways
+- place button into slot and fit the filament through the holes, make sure you have your switch installed before doing this. Now i recommend doing one button at a time then cut the filament after getting about halfway into the channel
+- alternatively you can just push one continious piece of filament through as many buttons as you can.
