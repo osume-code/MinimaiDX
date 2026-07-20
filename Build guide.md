@@ -34,3 +34,5 @@ Installing buttons, this is honestly one of the easiest things to do.
 - first check if the hole in the button is large enough for standard 1.75mm filament to fit through smoothly, if not either adjust CAD model or just shove it through. It'll probally work fine anyways
 - place button into slot and fit the filament through the holes, make sure you have your switch installed before doing this. Now i recommend doing one button at a time then cut the filament after getting about halfway into the channel
 - alternatively you can just push one continious piece of filament through as many buttons as you can.
+
+- photo above should show the peices of filament as the hinges for the buttons
