@@ -1,42 +1,99 @@
 # Build Guide
 
-Firstly we need to determine the size/play area of your tablet (mine is about 163mm) to do this open up AstroDX and load up a chart, then measure the diameter of the play circle. You may be able to adjust the play area size in settings to match mine in order to not need any CAD modifications (at least for the shell)
+First you need to determine the size and play area of your tablet (mine is about 163mm). To do this, open up AstroDX and load up a chart, then measure the diameter of the play circle. You may be able to adjust the play area size in settings to match mine, which would let you skip CAD modifications, at least for the shell.
+
 <img width="1600" height="216" alt="playareasize" src="https://github.com/user-attachments/assets/7b787b46-7339-40ff-ac15-77d6b93edda4" />
-Mounting clips will also need to be custom made for different sized tablets (CAD files attached) modify as needed
 
-## 3d printing instructions
-- Ensure the printed switch socket fits the low profile switch snugly but it should not take too much force
-- Make sure you can fit 1.75mm filament through the holes in the printed buttons and shell
-- I recommend printing the buttons in lower layer heights (0.10mm)
-- I also recommend printing the buttons top down and use a smooth plate if possible
-- For best feel calibrate ironing and turn topmost surface ironing on for the shell
-- No supports are needed for any of the 3d prints
+Mounting clips will also need to be custom made for different sized tablets. CAD files are attached, so modify them as needed.
 
-# How to assemble 
+## 3D Printing Instructions
+
+- Ensure the printed switch socket fits the low profile switch snugly, but it shouldn't take too much force to insert.
+- Make sure you can fit 1.75mm filament through the holes in the printed buttons and shell.
+- I recommend printing the buttons at a lower layer height (0.10mm).
+- I also recommend printing the buttons top down, using a smooth plate if possible.
+- For the best feel, calibrate ironing and turn on topmost surface ironing for the shell.
+- No supports are needed for any of the 3D prints.
+
+# How to Assemble
+
 ## Wiring & Switches
+
 <img width="435" height="381" alt="image" src="https://github.com/user-attachments/assets/973ea924-cb67-4bc0-89f5-3c81c25ea9fe" />
 
-Assuming you want the wires to come out from the top (I reccomend either going with top or bottom relative to play orientation) ring buttons 1-4 will be clumped together and 5-8 will also be clumped together on the other side. Photo for visualisation <img width="1600" height="1280" alt="image" src="https://github.com/user-attachments/assets/18eb0470-a61b-41ac-9941-9c277f67c23d" />
+Assuming you want the wires to come out from the top (I recommend picking either top or bottom relative to play orientation), buttons 1 to 4 will be grouped together on one side, and buttons 5 to 8 will be grouped together on the other. Here's a photo for visualization:
 
-In total 8 pairs of wires will be needed with 4 pairs per side, you want to make sure that you can identify which pair of wires orginate from the same switch (I did this by pulling back the wire from the cable channel until I could see a pair have a visbly different length from the others). In each of the sides, each pair of wires will need to be linearly longer as more cable is needed to reach the Pi Pico (so for example the pair of wires closest to the designated hole lets say button1 that the wires will come out off will have the shortest wire and button4 will need the longest pair of wires)
-First start with soldering switches to the their respective wires
-- make 4 sets of a pair of wires
-- recommened to tin the tip of the wires with solder before soldering it to the switch
-- solder the wires to the switches
-Now we add the switches to the shell
-- thread the wires into the cable channel
-- then insert the switches into the slot
-- now thread the wires through the little holes until you reach your exit point
-- repeat increasing wire length until all 4 buttons on that side are done
-Repeat again for all the buttons on the other side
+<img width="1600" height="1280" alt="image" src="https://github.com/user-attachments/assets/18eb0470-a61b-41ac-9941-9c277f67c23d" />
+
+In total, you'll need 8 pairs of wires, 4 pairs per side. Make sure you can identify which pair of wires comes from the same switch. I did this by pulling back the wire from the cable channel until I could see that each pair had a visibly different length from the others.
+
+On each side, every pair of wires needs to be progressively longer, since more cable is needed to reach the Pi Pico as you move further from the exit point. For example, if button 1's wires are the first to exit, that pair will be the shortest, and button 4's pair will need to be the longest.
+
+Start by soldering the switches to their wires:
+
+- Make 4 sets of wire pairs.
+- Tin the tips of the wires with solder before soldering them to the switch.
+- Solder the wires to the switches.
+
+Now add the switches to the shell:
+
+- Thread the wires into the cable channel.
+- Insert the switch into its slot.
+- Thread the wires through the small holes until you reach your exit point.
+- Repeat with increasing wire length until all 4 buttons on that side are done.
+
+Repeat the process for all the buttons on the other side.
 
 ## Buttons
-Installing buttons, this is honestly one of the easiest things to do.
-- first check if the hole in the button is large enough for standard 1.75mm filament to fit through smoothly, if not either adjust CAD model or just shove it through. It'll probally work fine anyways
-- place button into slot and fit the filament through the holes, make sure you have your switch installed before doing this. Now i recommend doing one button at a time then cut the filament after getting about halfway into the channel
-- alternatively you can just push one continious piece of filament through as many buttons as you can.
-- photo below should show the peices of filament as the hinges for the buttons
+
+Installing the buttons is honestly one of the easiest parts.
+
+- First check if the hole in the button is large enough for standard 1.75mm filament to fit through smoothly. If not, either adjust the CAD model or just push it through, it'll probably work fine anyway.
+- Place the button into its slot and fit the filament through the holes, making sure the switch is already installed before doing this. I recommend doing one button at a time, then cutting the filament after it's about halfway into the channel.
+- Alternatively, you can push one continuous piece of filament through as many buttons as possible.
+- The photo below shows the filament pieces acting as hinges for the buttons.
+
 <img width="1600" height="1280" alt="WhatsApp Image 2026-07-20 at 14 19 28 (2)" src="https://github.com/user-attachments/assets/9a082d49-632c-4eba-a139-83b034986bb5" />
 
 ## Software
-So ill be honest here I cant properly guide 
+
+MinimaiDX runs on QMK firmware, so setup is simple whether you want to just flash it or customize it first.
+
+### Flashing the default firmware
+
+1. Hold the **BOOTSEL** button on your Pico.
+2. While holding it, plug the Pico into your computer via USB.
+3. Release BOOTSEL once it's connected. A drive named **RPI-RP2** will appear.
+4. Drag and drop `minimai_default.uf2` onto that drive.
+5. The Pico will automatically reboot into the new firmware.
+
+By default, the 8 buttons are mapped as follows:
+
+| Button | Key | GPIO |
+|---|---|---|
+| A1 | W | GP0 |
+| A2 | E | GP1 |
+| A3 | D | GP2 |
+| A4 | C | GP3 |
+| A5 | X | GP4 |
+| A6 | Z | GP5 |
+| A7 | A | GP6 |
+| A8 | Q | GP7 |
+
+### Customizing the firmware
+
+If you want different keys or wired your buttons to different pins, you'll need to edit the source and rebuild it yourself.
+
+- To change keys, edit `keymaps/default/keymap.c` and swap in whichever keys you want. Keep the order matching your wiring: position 0 in the keymap should correspond to position 0 in the pin list.
+- To change GPIO pins, edit the `matrix_pins.direct` array in `keyboard.json` so it matches how you actually wired your buttons.
+
+To build from source:
+
+1. Install the [QMK CLI](https://docs.qmk.fm/newbs_getting_started). On Windows, use the MSYS2 MinGW 64-bit terminal for all commands below.
+2. Place the `minimai` folder inside `qmk_firmware/keyboards/minimai`.
+3. Run:
+   ```
+   qmk compile -kb minimai -km default
+   ```
+4. The new `.uf2` file will appear in the root of your `qmk_firmware` folder.
+5. Flash it using the same BOOTSEL steps as above.
